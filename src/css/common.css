@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.phone-icon, .time-icon, .insta-icon, .twitter-icon,  .like-icon, .cabinet-icon, .basket-icon, .search-icon{
+    position: relative;
+    padding-left: 20px;
+}
+
+.phone-icon::before{
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    content: "";
+    left: -5px;
+    top: 4px;
+    background: url("img/phone-icon.png");
+}
+.time-icon::before{
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    content: "";
+    left: -5px;
+    top: 4px;
+    background: url("img/time-icon.png")
+}
+.insta-icon::before{
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    content: "";
+    left: -5px;
+    top: 4px;
+    background: url("img/insta-icon.png") no-repeat center / contain;
+}
+.twitter-icon{
+    width: 16px;
+    height: 16px;
+    background: url("img/twitter-icon.png") no-repeat center / contain;
+}
+.like-icon{
+    width: 16px;
+    height: 16px;
+    background: url("img/like-icon.png") no-repeat center / contain;
+}
+.cabinet-icon{
+    width: 16px;
+    height: 16px;
+    background: url("img/cabinet-icon.png") no-repeat center / contain;
+}
+.basket-icon{
+    width: 16px;
+    height: 16px;
+    background: url("img/basket-icon.png") no-repeat center / contain;
+}
+.search-icon{
+    width: 16px;
+    height: 16px;
+    background: url("img/search-icon.png") no-repeat center / contain;
+}
+
+.background-gray{
+    background-color: #f1f1f1;
+}
+
+.background_purple{
+    background: linear-gradient(90deg, #9b78ba 45%, #9a6786  55%);
+}

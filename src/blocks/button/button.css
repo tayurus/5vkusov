@@ -1,0 +1,8 @@
+.button{
+    outline: none;
+    padding: 10px 22px;
+    text-align: center;
+    display: block;
+    margin: 0px auto;
+    width: max-content;
+}
