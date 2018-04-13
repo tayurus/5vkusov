@@ -18,7 +18,7 @@ body{
     height: 16px;
     position: absolute;
     content: "";
-    left: -5px;
+    left: 0px;
     top: 4px;
     background: url("img/phone-icon.png");
 }
@@ -27,7 +27,7 @@ body{
     height: 16px;
     position: absolute;
     content: "";
-    left: -5px;
+    left: 0px;
     top: 4px;
     background: url("img/time-icon.png")
 }
@@ -36,7 +36,7 @@ body{
     height: 16px;
     position: absolute;
     content: "";
-    left: -5px;
+    left: 0px;
     top: 4px;
     background: url("img/insta-icon.png") no-repeat center / contain;
 }
