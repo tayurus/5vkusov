@@ -6,15 +6,15 @@ html(lang="en")
         
         main
             .container
-                    ul.breadcrumbs
-                        li
-                            a.breadcrumbs__item(href="#") Главная 
-                        li
-                            a.breadcrumbs__item(href="#") Кондитерские изделия  
-                        li
-                            a.breadcrumbs__item(href="#") Торты в наличии  
-                        li
-                            a.breadcrumbs__item.breadcrumbs__item_active(href="#") Торт красивый
+                ul.breadcrumbs
+                    li
+                        a.breadcrumbs__item(href="#") Главная 
+                    li
+                        a.breadcrumbs__item(href="#") Кондитерские изделия  
+                    li
+                        a.breadcrumbs__item(href="#") Торты в наличии  
+                    li
+                        a.breadcrumbs__item.breadcrumbs__item_active(href="#") Торт красивый
                             
             section.container
                 .row
@@ -22,10 +22,93 @@ html(lang="en")
                         img(src="img/cake-big.png", class="img-fluid")
                     .col-md-5.product
                         include ../blocks/product/product.jade
-                                
-                            
                         
-                            
+            section.container
+                h2.container__title Рекомендованные товары
+                .row
+                    .col-xl-3.col-sm-6.form-group
+                        .preview
+                            .preview__special.preview__special-stock
+                            img(src="img/preview1.png", class="preview__img")
+                            .preview__bottom
+                                h3.preview__title Торт на свадьбу
+                                h4.preview__text Предлагаем широкий выбор начинок и дизайна для торта Вашей мечты
+                                .preview__price от
+                                    span 3500
+                                    | руб
+                    .col-xl-3.col-sm-6.form-group
+                        .preview
+                            .preview__special.preview__special-new
+                            img(src="img/preview2.png", class="preview__img")
+                            .preview__bottom
+                                h3.preview__title Конфеты из инжира
+                                h4.preview__text Предлагаем широкий выбор начинок и дизайна для торта Вашей мечты
+                                .preview__price от
+                                    span 180
+                                    | руб
+                    .col-xl-3.col-sm-6.form-group
+                        .preview
+                            .preview__special.preview__special-present
+                            img(src="img/preview3.png", class="preview__img")
+                            .preview__bottom
+                                h3.preview__title Капкейк с грецким орехом
+                                h4.preview__text Предлагаем широкий выбор начинок и дизайна для торта Вашей мечты
+                                .preview__price от
+                                    span 350
+                                    | руб
+                    .col-xl-3.col-sm-6.form-group
+                        .preview
+                            img(src="img/preview4.png", class="preview__img")
+                            .preview__bottom
+                                h3.preview__title Зефир малинка
+                                h4.preview__text Предлагаем широкий выбор начинок и дизайна для торта Вашей мечты
+                                .preview__price от
+                                    span 110
+                                    | руб
+                                    
+                                    
+            section.container
+                h2.container__title Персональные рекомендации
+                .row
+                    .col-xl-3.col-sm-6.form-group
+                        .preview
+                            img(src="img/preview1.png", class="preview__img")
+                            .preview__bottom
+                                h3.preview__title Торт на свадьбу
+                                h4.preview__text Предлагаем широкий выбор начинок и дизайна для торта Вашей мечты
+                                .preview__price от
+                                    span 3500
+                                    | руб
+                    .col-xl-3.col-sm-6.form-group
+                        .preview
+                            img(src="img/preview2.png", class="preview__img")
+                            .preview__bottom
+                                h3.preview__title Конфеты из инжира
+                                h4.preview__text Предлагаем широкий выбор начинок и дизайна для торта Вашей мечты
+                                .preview__price от
+                                    span 180
+                                    | руб
+                    .col-xl-3.col-sm-6.form-group
+                        .preview
+                            img(src="img/preview3.png", class="preview__img")
+                            .preview__bottom
+                                h3.preview__title Капкейк с грецким орехом
+                                h4.preview__text Предлагаем широкий выбор начинок и дизайна для торта Вашей мечты
+                                .preview__price от
+                                    span 350
+                                    | руб
+                    .col-xl-3.col-sm-6.form-group
+                        .preview
+                            img(src="img/preview4.png", class="preview__img")
+                            .preview__bottom
+                                h3.preview__title Зефир малинка
+                                h4.preview__text Предлагаем широкий выбор начинок и дизайна для торта Вашей мечты
+                                .preview__price от
+                                    span 110
+                                    | руб
+                                    
+            include ../blocks/feedback/feedback.jade
+                                            
             
         
         include ../blocks/footer/footer.jade

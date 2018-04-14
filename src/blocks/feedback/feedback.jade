@@ -1,0 +1,19 @@
+section
+    form.form-group.feedback.container-fluid
+        .container
+            .col-lg-6
+                h2.feedback__title Форма обратной связи
+                h3.feedback__subtitle Заполните форму, укажите, что Вас интересует, наш консультант свяжется с Вами в самое ближайшее время!
+                .row
+                    input(class="feedback__input", type="text", required, placeholder="Ваше имя", name="name")
+                    input(class="feedback__input", type="email", required, placeholder="E - mail", name="mail")
+                .row
+                    input(class="feedback__input", type="tel", required, placeholder="Номер телефона", name="phone")
+                    input(class="feedback__input", type="email", required, placeholder="Что Вас интересует?", name="subject")
+                .row
+                    .col-6
+                        label.feedback__custom-input
+                            input(type="checkbox" hidden, name="agree", required, id="feedback__agree")
+                        label(for="feedback__agree", class="feedback__label") - Я даю согласие на обработку моих персональных данных
+
+                    input(class="feedback__submit", type="submit", value="Отправить заявку") 
