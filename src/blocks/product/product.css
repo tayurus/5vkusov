@@ -1,0 +1,109 @@
+.product__title{
+    color: #333333;
+    font-family: "Open Sans";
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin: 0px;
+    margin-bottom: 21px;
+}
+
+.product__status{
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    padding-left: 20px;
+}
+
+.product__status-avaible{
+    color: #7367f0;
+}
+
+.product__status::before{
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    left: 0%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.product__status-avaible::before{
+    background-color: #7367f0;
+}
+
+.product__status-notavaible{
+    color: tomato;
+}
+
+.product__status-notavaible{
+    background-color: tomato;
+}
+
+.product__price{
+    color: #646464;
+    margin-bottom: 26px;
+}
+
+.product__price-value, .product__price-weight{
+    color: #646464;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.product__price-value{
+    padding-right: 4px;
+}
+
+.product__price-weight{
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.product__weight-value{
+    padding-right: 4px;
+}
+
+.product__weight, .product__filling, .product__date{
+    width: 90%;
+    margin: 0px auto 18px auto;
+    display: block;
+    position: relative;
+    padding: 13px;
+    border-radius: 19px;
+    border: 1px solid rgba(100, 100, 100, 0.5);
+    color: #333333;
+    user-select: none;
+}
+
+.product__weight-minus, .product__weight-plus{
+    cursor: pointer;
+}
+
+.product__weight-controls{
+    width: 40px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 17px;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* custom arrow for select */
+.product__filling::-ms-expand {	display: none; }
+.product__filling{
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.product__filling{
+    cursor: pointer;
+    background: url("img/select-arrow.png") no-repeat 95% center / 11px 6px;
+}

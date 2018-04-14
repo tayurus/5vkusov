@@ -1,0 +1,28 @@
+.product
+
+    h2.product__title Торт Фиолетовый красивый
+
+    .product__status.product__status-avaible в наличии
+
+    .product__price 
+        span.product__price-value 1500
+        | рублей за
+        span.product__price-weight 1
+        | КГ
+
+    .product__weight
+        | от 
+        span.product__weight-value 5
+        | кг
+
+        .product__weight-controls
+            span.product__weight-minus -
+            span.product__weight-plus +
+    
+    select.product__filling
+        option(selected, disabled, hidden) Выбрать начинку
+        option Начинка вкусная
+        option Начинка не очень вкусная
+        option Начинка совсем не вкусная
+        
+    input(type='date', class="product__date")

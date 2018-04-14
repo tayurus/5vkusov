@@ -36,9 +36,7 @@
     }
 
     .header nav > img{
-        position: static;
-        transform: none;
-        margin: 0px auto;
+        display: none;
     }
 
     .header nav ul{

@@ -3,9 +3,29 @@ html(lang="en")
     include ../blocks/head/head.jade
     body
         include ../blocks/header/header.jade
-            
-        main
         
+        main
+            .container
+                    ul.breadcrumbs
+                        li
+                            a.breadcrumbs__item(href="#") Главная 
+                        li
+                            a.breadcrumbs__item(href="#") Кондитерские изделия  
+                        li
+                            a.breadcrumbs__item(href="#") Торты в наличии  
+                        li
+                            a.breadcrumbs__item.breadcrumbs__item_active(href="#") Торт красивый
+                            
+            section.container
+                .row
+                    .col-md-7
+                        img(src="img/cake-big.png", class="img-fluid")
+                    .col-md-5.product
+                        include ../blocks/product/product.jade
+                                
+                            
+                        
+                            
             
         
         include ../blocks/footer/footer.jade
