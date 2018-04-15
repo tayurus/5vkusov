@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    font-family: "Open Sans";
 }
 
 body{
@@ -7,6 +8,21 @@ body{
     padding: 0px;
 }
 
+a{
+    text-decoration: none !important;
+}
+
+a:hover{
+    color: #7367f0;
+}
+
+[type='submit']{
+    cursor: pointer;
+}
+
+.no-padding{
+    padding: 0px !important
+}
 
 .phone-icon, .time-icon, .insta-icon, .twitter-icon,  .like-icon, .cabinet-icon, .basket-icon, .search-icon{
     position: relative;
@@ -40,11 +56,35 @@ body{
     top: 4px;
     background: url("img/insta-icon.png") no-repeat center / contain;
 }
+
+.insta-icon_footer::before{
+    background: url("img/insta-icon_footer.png") no-repeat center / contain;
+}
+
+.offer-icon{
+    position: relative;
+}
+
+.offer-icon::after{
+    width: 14px;
+    height: 13px;
+    position: absolute;
+    content: "";
+    right: -25px;
+    top: 4px;
+    background: url("img/offer.png") no-repeat center / contain;
+}
+
 .twitter-icon{
     width: 16px;
     height: 16px;
     background: url("img/twitter-icon.png") no-repeat center / contain;
 }
+
+.twitter-icon_footer{
+    background: url("img/twitter-icon_footer.png") no-repeat center / contain;
+}
+
 .like-icon{
     width: 16px;
     height: 16px;

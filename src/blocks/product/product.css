@@ -69,7 +69,7 @@
 }
 
 .product__weight, .product__filling, .product__date{
-    width: 90%;
+    width: 100%;
     margin: 0px auto 18px auto;
     display: block;
     position: relative;

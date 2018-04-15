@@ -5,17 +5,17 @@ header.header
     .container-fluid.background_purple.header__top
         .container
             .row
-                .col-md-2
-                .col-md-4.d-flex.flex-wrap.justify-content-around.justify-content-md-between.align-items-center
+                .col-lg-2
+                .col-lg-4.d-flex.flex-wrap.justify-content-around.justify-content-xl-between.align-items-center
                     a(href="tel:+78009007060", class="link link_header phone-icon") + 7 (800) 900-70-60
                     span(class="link link_header time-icon") Пн-Вс 9:00 - 21:00
                 
-                .col-md-4.d-flex.flex-wrap.justify-content-around.justify-content-md-between.align-items-center
-                    a(href="#", class="link link_header insta-icon") @_Обучение
-                    a(href="#", class="link link_header insta-icon") @_Изделия
+                .col-lg-4.d-flex.flex-wrap.justify-content-around.align-items-center.header__col_verticalLines
+                    a(href="#", class="link link_header insta-icon link_header-text-small") @_Обучение
+                    a(href="#", class="link link_header insta-icon link_header-text-small") @_Изделия
                     a(href="#", class="twitter-icon")
                         
-                .col-md-2.d-flex.flex-wrap.justify-content-around.justify-content-md-between.align-items-center
+                .col-lg-2.d-flex.flex-wrap.justify-content-around.justify-content-xl-between.align-items-center
                     a(href="#", class="like-icon")
                     a(href="#", class="cabinet-icon")
                     a(href="#", class="basket-icon")
@@ -32,7 +32,35 @@ header.header
                         li
                             a(href="#", class="header__nav-item") о нас
                         li
-                            a(href="#", class="header__nav-item") кондитерские изделия
+                            a(href="#", class="header__nav-item header__nav-item_active dropdown") кондитерские изделия
+                            ul.header__submenu
+                                li
+                                    a(href="#", class="header__submenu-item") Торты в наличии
+                                li
+                                    a(href="#", class="header__submenu-item") Детские торты
+                                li
+                                    a(href="#", class="header__submenu-item") Свадебные торты
+                                li
+                                    a(href="#", class="header__submenu-item") Торты ДЛЯ МУЖЧИН
+                                li
+                                    a(href="#", class="header__submenu-item") Торты ДЛЯ ЖЕНЩИН
+                                li
+                                    a(href="#", class="header__submenu-item") Торты НА ЮБИЛЕЙ
+                                li
+                                    a(href="#", class="header__submenu-item") Торты КОРПОРАТИВНЫЕ
+                                li
+                                    a(href="#", class="header__submenu-item") Макаронсы
+                                li
+                                    a(href="#", class="header__submenu-item") Пирожные
+                                li
+                                    a(href="#", class="header__submenu-item") Кексы
+                                li
+                                    a(href="#", class="header__submenu-item") Конфеты
+                                li
+                                    a(href="#", class="header__submenu-item") Зефир
+                                li
+                                    a(href="#", class="header__submenu-item") Сладкий стол
+                                    
                         li
                             a(href="#", class="header__nav-item") начинки для тортов
                         li
@@ -46,7 +74,8 @@ header.header
                         li
                             a(href="#", class="header__nav-item") контакты
                             
-                img(src="img/header-logo.png", class="header__nav-img")
+                a(href="#")
+                    img(src="img/header-logo.png", class="header__nav-img")
             
                     
         

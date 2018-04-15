@@ -1,19 +1,22 @@
 section
-    form.form-group.feedback.container-fluid
+    form.feedback.container-fluid
         .container
-            .col-lg-6
-                h2.feedback__title Форма обратной связи
+            .col-lg-6.mx-auto.mx-xl-0
+                h2.feedback__title.text-center.text-xl-left Форма обратной связи
                 h3.feedback__subtitle Заполните форму, укажите, что Вас интересует, наш консультант свяжется с Вами в самое ближайшее время!
-                .row
+                .row.d-flex.justify-content-around.flex-wrap
                     input(class="feedback__input", type="text", required, placeholder="Ваше имя", name="name")
                     input(class="feedback__input", type="email", required, placeholder="E - mail", name="mail")
-                .row
+                .row.d-flex.justify-content-around.flex-wrap
                     input(class="feedback__input", type="tel", required, placeholder="Номер телефона", name="phone")
-                    input(class="feedback__input", type="email", required, placeholder="Что Вас интересует?", name="subject")
-                .row
-                    .col-6
-                        label.feedback__custom-input
-                            input(type="checkbox" hidden, name="agree", required, id="feedback__agree")
-                        label(for="feedback__agree", class="feedback__label") - Я даю согласие на обработку моих персональных данных
+                    input(class="feedback__input", type="text", required, placeholder="Что Вас интересует?", name="subject")
+                .row.d-flex.justify-content-around.flex-wrap.align-items-center
+                    .col-xl-7.no-padding.d-flex.justify-content-center.justify-content-xl-start 
+                        .feedback__checkbox-wrapper
+                            input(type="checkbox", name="agree", required, id="feedback__agree")
+                            label.feedback__custom-input(for="feedback__agree")
+                        label(for="feedback__agree", class="feedback__label") - Я даю согласие на обработку
+                            br
+                            | моих персональных данных
 
                     input(class="feedback__submit", type="submit", value="Отправить заявку") 

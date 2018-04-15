@@ -7,8 +7,18 @@
     font-family: "Open Sans";
 }
 
+.link_header-text-small{
+    font-size: 14px;
+}
+
 .link_footer{
     color: #646464;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.link_footer:hover{
+    color: #a11b4a;
 }
 
 @media (max-width:500px),(max-device-width:500px) {

@@ -1,6 +1,13 @@
-.footer > .container{
-    padding-top: 35px;
-    padding-bottom: 35px;
+
+.footer__top{
+     border-bottom:  1px solid #d7d7d7;
+     padding-top: 35px;
+     padding-bottom: 30px;
+}
+
+.footer__bottom{
+    padding-top: 18px;
+    padding-bottom: 18px;
 }
 
 .footer ul{
@@ -9,9 +16,15 @@
 }
 
 .footer ul li{
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .footer__developer{
     margin: 0px 10px;
+}
+
+@media (max-width:992px),(max-device-width:992px) {
+    .footer__bottom .row > [class^='col-']{
+        margin-bottom: 20px;
+    }
 }
