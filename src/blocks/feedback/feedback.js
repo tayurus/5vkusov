@@ -1,7 +1,7 @@
-$(document).ready(function() {
+
 
     //при попытке отправить форму обратной связи - проверим, что все заполнено корректно
-    $(".feedback__submit").click(function(){
+    $(".feedback .button").click(function(){
         //идем по всем инпутам внутри формы
         $(".feedback__input").each(function(index, item) {
             //если пользователь забыл заполнить поле
@@ -18,4 +18,3 @@ $(document).ready(function() {
     $(".feedback__input").focus(function(){
         $(this).removeClass("feedback__input_error");
     })
-})

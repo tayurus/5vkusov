@@ -73,12 +73,28 @@
     margin: 0px auto 18px auto;
     display: block;
     position: relative;
-    padding: 13px;
+    padding: 9px 10px;
     border-radius: 19px;
     border: 1px solid rgba(100, 100, 100, 0.5);
     color: #333333;
     user-select: none;
 }
+
+.product__date::-webkit-inner-spin-button
+ {
+    display: none;
+    -webkit-appearance: none;
+}
+
+.product__date::-webkit-calendar-picker-indicator{
+    color: rgba(0, 0, 0, 0);
+    opacity: 0;
+}
+
+.product__date{
+    background: url("img/calendar-icon.png") no-repeat 97% center / 16px;
+}
+
 
 .product__weight-minus, .product__weight-plus{
     cursor: pointer;
@@ -96,6 +112,39 @@
     transform: translateY(-50%);
 }
 
+.product__count{
+    display: flex;
+    justify-content: space-between;
+    min-width: 130px;
+    max-width: 130px;
+    align-items: center;
+}
+
+.product__count_minus, .product__count_plus{
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    color: #646464;
+    font-size: 14px;
+    border: 1px solid #707070;
+    border-radius: 100%;
+    cursor: pointer;
+    user-select: none;
+}
+
+.product__count-value{
+    color: #333333;
+    font-size: 14px;
+}
+
+.product .favourite-icon{
+    margin-left: 28px;
+}
+
+.product .vk-icon, .product .fb-icon, .product .insta-icon2, .product .twitter-icon2{
+    margin-left: 20px;
+}
+
 /* custom arrow for select */
 .product__filling::-ms-expand {	display: none; }
 .product__filling{
@@ -103,7 +152,28 @@
     appearance: none;
 }
 
-.product__filling{
+.product__filling + span{
     cursor: pointer;
-    background: url("img/select-arrow.png") no-repeat 95% center / 11px 6px;
+    background: #fff url("img/select-arrow.png") no-repeat 95% center / 11px 6px;
+    width: 100% !important;
+    margin: 0 auto 18px auto;
+    display: block;
+    position: relative;
+    padding: 9px 10px;
+    border-radius: 19px;
+    border: 1px solid rgba(100,100,100,.5);
+    color: #333;
+    user-select: none;
+}
+
+.product__filling + span:hover{
+    background: #fff !important;
+}
+
+
+
+@media (max-width:1200px),(max-device-width:1200px) {
+    .product__count{
+        margin-bottom: 1rem;
+    }
 }

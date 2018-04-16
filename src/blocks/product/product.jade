@@ -21,8 +21,29 @@
     
     select.product__filling
         option(selected, disabled, hidden) Выбрать начинку
-        option Начинка вкусная
+        option Начинка вкусная fwe we ew ewf ewf wef ew wef we we we we ew we ew we gtrhrt hrt htr hrt htr hrt rt 
         option Начинка не очень вкусная
         option Начинка совсем не вкусная
         
     input(type='date', class="product__date")
+    
+    .d-flex.align-items-center.justify-content-xl-between.justify-content-around.flex-wrap.mb-3
+        .product__count
+            .product__count_minus -
+            span.product__count-value 5 
+            span  шт
+            .product__count_plus +
+        button(class="button button_basket col-xl-6") Добавить в корзину
+    
+    button(class="button button_border_red") Купить в 1 клик
+    hr
+    .d-flex.align-items-center
+        .product__label Добавить в избранное 
+        .favourite-icon
+    .d-flex.align-items-center
+        .product__label Поделиться с друзьями
+        a.vk-icon(href="#")
+        a.fb-icon(href="#")
+        a.insta-icon2(href="#")
+        a.twitter-icon2(href="#")
+    

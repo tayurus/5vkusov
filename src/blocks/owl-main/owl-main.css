@@ -1,0 +1,48 @@
+.owl-main{
+    padding: 100px 0px 30px 0px;
+}
+
+.owl-main__title{
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+    color: #e1d5e7;
+    text-transform: uppercase;
+}
+
+.owl-main__name{
+    color: #f2c3c4;
+    font-family: "Alegreya Sans - Black";
+    font-size: 100px;
+    text-transform: uppercase;
+}
+
+.owl-main__text{
+    color: #ffffff;
+    line-height: 30px;
+    margin-bottom: 43px;
+}
+
+.owl-main .owl-dot{
+    outline: none !important;
+}
+
+.owl-main .owl-dot span{
+    background: #8d5b87 !important;
+    width:16px !important;
+    height: 16px !important;
+}
+.owl-main .owl-dot.active span{
+    background: #773954 !important;
+}
+
+@media (max-width:1200px),(max-device-width:1200px) {
+    .owl-main__name{
+        font-size: 62px;
+    }
+}
+@media (max-width:430px),(max-device-width:430px) {
+    .owl-main__name{
+        font-size: 48px;
+    }
+}

@@ -1,4 +1,7 @@
-
+.footer__logo{
+    width: 175px;
+    height: 170px;
+}
 .footer__top{
      border-bottom:  1px solid #d7d7d7;
      padding-top: 35px;

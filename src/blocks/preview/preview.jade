@@ -1,3 +1,4 @@
+//- ЭТО КАРТОЧКА ТОВАРА
 a.preview(href="#")
     .preview__special.preview__special-stock
     figure
@@ -8,4 +9,29 @@ a.preview(href="#")
         .preview__price от
             span 3500
             | руб
-        span.preview__details Подробнее
+    span.preview__details Подробнее
+
+
+//- А ЭТО КАРТОЧКА УЧЕБНОГО КУРСА
+.col-xl-3.col-sm-6.form-group
+    a.preview(href="#")
+        figure
+            img(src="img/course1.png", class="preview__img")
+        .preview__bottom
+            h3.preview__title Курс: «Макаронс»
+            .d-flex.justify-content-between
+                .preview__label 25.04.18
+                .preview__label Иванова Юлия
+            hr
+        .preview__bottom
+            .preview__label Продолжительность: 
+                b 3 дня
+            .preview__label Время занятий: 
+                b с 10:00 до 18:00 
+            .preview__label Сложность: 
+                b.text-purple Легкий
+                
+            .preview__price 
+                span 3500
+                | руб
+            span.preview__details Подробнее

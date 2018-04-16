@@ -24,9 +24,32 @@ a:hover{
     padding: 0px !important
 }
 
+.text-purple{
+    color: #9b59b6;
+}
+
+.text-white{
+    color: #fff;
+}
+
 .phone-icon, .time-icon, .insta-icon, .twitter-icon,  .like-icon, .cabinet-icon, .basket-icon, .search-icon{
     position: relative;
     padding-left: 20px;
+    cursor: pointer;
+}
+
+.close-icon{
+    width: 26px;
+    height: 26px;
+    display: block;
+    background: #fff url("img/close.svg") no-repeat center / 20px;
+}
+
+.favourite-icon{
+    width: 14px;
+    height: 14px;
+    background: url("img/favourite.png") no-repeat center / cover;
+    cursor: pointer;
 }
 
 .phone-icon::before{
@@ -57,8 +80,24 @@ a:hover{
     background: url("img/insta-icon.png") no-repeat center / contain;
 }
 
+.insta-icon2{
+    width: 13px;
+    height: 13px;
+    background: url("img/insta-icon2.png") no-repeat center / contain;
+}
+
+.insta-icon_footer{
+    position: relative;
+}
+
 .insta-icon_footer::before{
-    background: url("img/insta-icon_footer.png") no-repeat center / contain;
+    content: "";
+    left: -20px;
+    top: 3px;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    background: url("img/insta-icon2.png") no-repeat center / contain;
 }
 
 .offer-icon{
@@ -79,10 +118,27 @@ a:hover{
     width: 16px;
     height: 16px;
     background: url("img/twitter-icon.png") no-repeat center / contain;
+
 }
 
-.twitter-icon_footer{
-    background: url("img/twitter-icon_footer.png") no-repeat center / contain;
+.twitter-icon2{
+    width: 16px;
+    height: 16px;
+    background: url("img/twitter-icon2.png") no-repeat center / contain;
+    cursor: pointer;
+}
+
+.vk-icon{
+    width: 20px;
+    height: 13px;
+    background: url("img/vk.png") no-repeat center / contain;
+    cursor: pointer;
+}
+.fb-icon{
+    width: 8px;
+    height: 14px;
+    background: url("img/fb.png") no-repeat center / contain;
+    cursor: pointer;
 }
 
 .like-icon{

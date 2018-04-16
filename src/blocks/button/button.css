@@ -1,8 +1,52 @@
+button{
+    cursor: pointer;
+}
+
 .button{
-    outline: none;
-    padding: 10px 22px;
-    text-align: center;
+    color: #d34d56;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 22px;
+    text-transform: uppercase;
+    border-radius: 19px;
+    background-color: #ffffff;
+    padding: 9px 27px;
+    border: none;
+}
+
+.button_basket{
+    padding: 10px 30px;
+    color: #fff;
+    background: linear-gradient(to right, #7367f0 0%, #ce9ffc 100%);
+}
+
+.button_big{
+    font-size: 16px;
+    padding: 15px 27px;
+    border-radius: 25px;
+}
+
+.button_purple{
+    background-color: #7367f0;
+    padding: 16px 42px;
+}
+
+.button_search{
+    color: #d34d56;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+.button_border_red{
+    border-radius: 19px;
+    border: 1px solid #d34d56;
+    color: #d34d56;
+    font-size: 14px;
+    text-transform: uppercase;
     display: block;
-    margin: 0px auto;
-    width: max-content;
+    width: 100%;
 }

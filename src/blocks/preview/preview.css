@@ -5,6 +5,11 @@
     position: relative;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     height: 100%;
+    padding-bottom: 35px;
+}
+
+.preview hr{
+    margin: 0px;
 }
 
 .preview > figure{
@@ -51,7 +56,7 @@
 
 
 .preview__bottom{
-    padding: 18px 42px 14px 20px;
+    padding: 0px 20px 14px 20px;
 }
 
 .preview__title{
@@ -60,6 +65,7 @@
     font-weight: 500;
     text-transform: uppercase;
     margin: 0px;
+    margin-bottom: 15px;
 }
 
 .preview__text{
@@ -67,7 +73,6 @@
     font-size: 14px;
     line-height: 20px;
     margin: 0px;
-    margin-top:18px;
 }
 
 .preview__price{
@@ -85,8 +90,9 @@
     color: #a11b4a;
     font-size: 14px;
     text-transform: uppercase;
-    position: relative;
-    top: 5px;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
     font-weight: bold;
 }
 
@@ -99,4 +105,10 @@
     transform: translateY(-50%);
     right: -25px;
     background: url("img/details.png") no-repeat center / cover;
+}
+
+.preview__label{
+    color: #646464;
+    font-size: 14px;
+    margin-bottom: 14px;
 }

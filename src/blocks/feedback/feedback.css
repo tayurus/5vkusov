@@ -84,20 +84,19 @@
     cursor: pointer;
 }
 
-.feedback__submit{
-    color: #d34d56;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 22px;
-    text-transform: uppercase;
-    border-radius: 19px;
-    background-color: #ffffff;
-    padding: 9px 27px;
-    border: none;
-}
 
 .feedback__label{
     color: #ffffff;
     font-size: 14px;
     line-height: 18px;
+}
+
+@media (max-width:1200px),(max-device-width:1200px) {
+    .feedback__input{
+        width: 100%;
+    }
+
+    .feedback__submit{
+        margin-top: 1rem;
+    }
 }

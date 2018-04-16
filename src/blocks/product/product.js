@@ -1,4 +1,12 @@
-$(document).ready(function() {
+    //инициализация jquery-ui select
+    $("select").selectmenu();
+
+
+    $("select").on("selectmenuopen", function() {
+        let maxWidth = $(".product__weight").outerWidth();
+        $(".ui-menu").removeAttr("style");
+        $(".ui-menu").css({"max-width" : maxWidth + "px"});
+    })
 
     //обработка нажатия знака "минус" в поле указания массы торта
     $(".product__weight-minus").click(function() {
@@ -16,6 +24,22 @@ $(document).ready(function() {
         $(".product__weight-value").text(currentVal + 1);
     });
 
+
+    //обработка нажатия знака "минус" при указании кол-ва товара
+    $(".product__count_minus").click(function(){
+        let currentVal = parseInt($(".product__count-value").text());
+
+        //проверка, что кол-во не равно минимально допустимому
+        if (currentVal != 1)
+            $(".product__count-value").text(currentVal - 1);
+    });
+
+    //обработка нажатия знака "плюс" при указании кол-ва товара
+    $(".product__count_plus").click(function(){
+        let currentVal = parseInt($(".product__count-value").text());
+        $(".product__count-value").text(currentVal + 1);
+    })
+
     //функция добавления дней к дате
     function addDays(date, days) {
         var result = new Date(date);
@@ -29,4 +53,3 @@ $(document).ready(function() {
     //преобразование даты к формату, который можно задавать атрибуту min у тега input type = date
     let resDate = minDate.toISOString().slice(0, minDate.toISOString().indexOf("T"));
     $(".product__date").attr("min", resDate);
-})

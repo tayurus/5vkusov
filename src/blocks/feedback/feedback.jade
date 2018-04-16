@@ -1,7 +1,7 @@
 section
     form.feedback.container-fluid
         .container
-            .col-lg-6.mx-auto.mx-xl-0
+            .col-xl-6.col-sm-12.mx-auto.mx-xl-0
                 h2.feedback__title.text-center.text-xl-left Форма обратной связи
                 h3.feedback__subtitle Заполните форму, укажите, что Вас интересует, наш консультант свяжется с Вами в самое ближайшее время!
                 .row.d-flex.justify-content-around.flex-wrap
@@ -15,8 +15,8 @@ section
                         .feedback__checkbox-wrapper
                             input(type="checkbox", name="agree", required, id="feedback__agree")
                             label.feedback__custom-input(for="feedback__agree")
-                        label(for="feedback__agree", class="feedback__label") - Я даю согласие на обработку
+                        a(href="#", class="feedback__label") - Я даю согласие на обработку
                             br
                             | моих персональных данных
 
-                    input(class="feedback__submit", type="submit", value="Отправить заявку") 
+                    input(class="button feedback__submit", type="submit", value="Отправить заявку") 

@@ -3,54 +3,61 @@ footer.footer
         .container
             .row
                 .col-md-3
-                    img(src='img/footer-logo.png', class="d-block mx-auto")
-                .col-md-3.text-md-left.text-center
-                    ul
-                        li
-                            a.link.link_footer(href="#") Главная
-                        li
-                            a.link.link_footer(href="#") О нас
-                        li
-                            a.link.link_footer(href="#") Как заказывать
-                        li
-                            a.link.link_footer(href="#") Доставка
-                        li
-                            a.link.link_footer(href="#") Контакты
+                    img(src='img/footer-logo.png', class="d-block mx-auto footer__logo")
+                        
+                nav.col-md-9.navbar.navbar-expand-sm.mx-auto.d-flex.justify-content-center
+                    button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarFooter', aria-controls='navbarFooter', aria-expanded='false', aria-label='Toggle navigation')
+                        i.fa.fa-bars
+                        
+                    #navbarFooter.collapse.navbar-collapse.row
+                        .col-sm-4.text-md-left.text-center
+                            ul
+                                li
+                                    a.link.link_footer(href="#") Главная
+                                li
+                                    a.link.link_footer(href="#") О нас
+                                li
+                                    a.link.link_footer(href="#") Как заказывать
+                                li
+                                    a.link.link_footer(href="#") Доставка
+                                li
+                                    a.link.link_footer(href="#") Контакты
+                                    
+                        .col-sm-4.text-md-left.text-center
+                            ul
+                                li
+                                    a.link.link_footer(href="#") Кондитерские изделия
+                                li
+                                    a.link.link_footer(href="#") Начинки для тортов
+                                li
+                                    a.link.link_footer(href="#") Обучение
+                                li
+                                    a.link.link_footer(href="#") Разное
+                                li
+                                    a.link.link_footer.offer-icon(href="#", download) Договор оферты
+                                    
+                        .col-sm-4.text-md-left.text-center
+                            span.link_label МОСКВА
+                            br
+                            span.link_label УЛИЦА ТВЕРСКАЯ, 150К1
+                            br
+                            br
+                            a.link_label.link_footer(href="tel:+79008007960") + 7 (900) 800-79-60
+                            br    
+                            a.link_label.link_footer(href="tel:+78009008030") + 7 (800) 900-80-30
+                            br
+                            br
+                            a.link_label.link_footer(href="mailto:5VKUSOV@MAIL.RU") 5VKUSOV@MAIL.RU
                             
-                .col-md-3.text-md-left.text-center
-                    ul
-                        li
-                            a.link.link_footer(href="#") Кондитерские изделия
-                        li
-                            a.link.link_footer(href="#") Начинки для тортов
-                        li
-                            a.link.link_footer(href="#") Обучение
-                        li
-                            a.link.link_footer(href="#") Разное
-                        li
-                            a.link.link_footer.offer-icon(href="#") Договор оферты
-                            
-                .col-md-3.text-md-left.text-center
-                    span.link_label МОСКВА
-                    br
-                    span.link_label УЛИЦА ТВЕРСКАЯ, 150К1
-                    br
-                    br
-                    span.link_label + 7 (900) 800-79-60
-                    br    
-                    span.link_label + 7 (800) 900-80-30
-                    br
-                    br
-                    span.link_label 5VKUSOV@MAIL.RU
     .container.footer__bottom
         .row.d-flex.justify-content-md-between
             .col-lg-4.text-lg-left.text-center
                 span.link_label 2018. 5 вкусов, все права защищены
             
             .col-lg-4.d-flex.justify-content-around.text-lg-left.text-center
-                a(href="#", class="link link_footer insta-icon insta-icon_footer") @_Обучение
-                a(href="#", class="link link_footer insta-icon insta-icon_footer") @_Изделия
-                a(href="#", class="twitter-icon twitter-icon_footer")
+                a(href="#", class="link link_footer insta-icon_footer") @_Обучение
+                a(href="#", class="link link_footer insta-icon_footer") @_Изделия
+                a(href="#", class="twitter-icon twitter-icon2")
                     
             .col-lg-4.d-flex.align-items-center.justify-content-center.justify-content-md-justify
                 a(href="http://web-comp.ru", class="link link_footer")  

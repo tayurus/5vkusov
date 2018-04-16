@@ -2,6 +2,12 @@ noscript
     p Please enable Javascript
     
 header.header
+    form.header__search
+        .row
+            input(type='search', name='search', class="header__search-input")
+            button(class="button_search") Искать
+            span.close-icon
+            
     .container-fluid.background_purple.header__top
         .container
             .row
@@ -19,15 +25,18 @@ header.header
                     a(href="#", class="like-icon")
                     a(href="#", class="cabinet-icon")
                     a(href="#", class="basket-icon")
-                    a(href="#", class="search-icon")
-    
+                    span.search-icon
+
     .container-fluid.background-gray
         .container
             nav.d-flex.flex-wrap.justify-content-around.navbar.navbar-expand-md
+                a(href="#", class="header__logo")
+                    img(src="img/header-logo.png", class="header__nav-img", alt="5 вкусов")
+                
                 button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNav', aria-controls='navbarNav', aria-expanded='false', aria-label='Toggle navigation')
                     i.fa.fa-bars
-                        
                 #navbarNav.collapse.navbar-collapse
+                
                     ul.navbar-nav.d-flex.flex-wrap.justify-content-between
                         li
                             a(href="#", class="header__nav-item") о нас
@@ -74,8 +83,7 @@ header.header
                         li
                             a(href="#", class="header__nav-item") контакты
                             
-                a(href="#")
-                    img(src="img/header-logo.png", class="header__nav-img")
+                
             
                     
         
