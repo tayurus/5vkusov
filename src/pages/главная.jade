@@ -113,35 +113,34 @@ html(lang="ru")
                 .row
                     .col-xl-3.col-sm-6.form-group
                         a.preview(href="#")
-                            .preview__special.preview__special-stock
                             figure
-                                img(src="img/preview1.png", class="preview__img")
+                                img(src="img/category1.png", class="preview__img")
                             .preview__bottom
-                                h3.preview__title Торт на свадьбу
+                                h3.preview__title Детские торты
                                 h4.preview__text Предлагаем широкий выбор начинок и дизайна для торта Вашей мечты
                                 .preview__price от
                                     span 3500
                                     | руб
                                 span.preview__details Подробнее
+                                
                     .col-xl-3.col-sm-6.form-group
                         a.preview(href="#")
-                            .preview__special.preview__special-new
                             figure
-                                img(src="img/preview2.png", class="preview__img")
+                                img(src="img/category2.png", class="preview__img")
                             .preview__bottom
-                                h3.preview__title Конфеты из инжира
+                                h3.preview__title Свадебные торты
                                 h4.preview__text Предлагаем широкий выбор начинок и дизайна для торта Вашей мечты
                                 .preview__price от
                                     span 180
                                     | руб
                                 span.preview__details Подробнее
+                                
                     .col-xl-3.col-sm-6.form-group
                         a.preview(href="#")
-                            .preview__special.preview__special-present
                             figure
-                                img(src="img/preview3.png", class="preview__img")
+                                img(src="img/category3.png", class="preview__img")
                             .preview__bottom
-                                h3.preview__title Капкейк с грецким орехом
+                                h3.preview__title Конфеты
                                 h4.preview__text Предлагаем широкий выбор начинок и дизайна для торта Вашей мечты
                                 .preview__price от
                                     span 350
@@ -150,19 +149,121 @@ html(lang="ru")
                     .col-xl-3.col-sm-6.form-group
                         a.preview(href="#")
                             figure
-                                img(src="img/preview4.png", class="preview__img")
+                                img(src="img/category4.png", class="preview__img")
                             .preview__bottom
-                                h3.preview__title Зефир малинка
+                                h3.preview__title Пирожные
                                 h4.preview__text Предлагаем широкий выбор начинок и дизайна для торта Вашей мечты
                                 .preview__price от
                                     span 110
                                     | руб
                                 span.preview__details Подробнее
-                                                    
                                 
-                
-                                    
-            include ../blocks/feedback/feedback.jade                                    
-            
+                .d-flex.justify-content-center.mt-4
+                    a(href="#", class="button background_purple2 text-white") Посмотреть все изделия
+                                                    
+                                            
+            include ../blocks/feedback/feedback.jade
         
+            section.container.py-4
+                .row
+                    .col-lg-6
+                        img(src="img/about-img.png", class="img-fluid d-block mx-auto")
+                    .col-lg-6
+                        h2.container__title.text-left О компании
+                        .container__text 
+                            | Кондитерская студия 5Вкусов -это натуральные ингредиенты и уникальный дизайн каждого торта.  У нас осуществляются все ваши сладкие фантазии. 
+                            | Мы используем только лучшие ингредиенты от ведущих производителей: бельгийский шоколад, натуральные фруктовые пюре и свежие ягоды. Наши кондитеры прошли обучение в лучших школах Франции, России и Испании. 
+                            | Мы следим за последними тенденциями в кондитерском искусстве, используем оригинальные рецепты и современные техники, особое внимание уделяя качеству ингредиентов, используя только лучшие и натуральные продукты без консервантов и искусственных добавок. 
+                            | Мы удивим Вас своими уникальными и разнообразными кондитерскими 
+                            | изделиями, которые непременно украсят Ваш праздник будь то день 
+                            | рождения, небольшое семейное чаепитие или грандиозное мероприятие!
+                        a.link_details.text-right.d-block.mt-4.pr-4(href="#") Познакомиться с компанией
+                    
+            section.container-fluid.py-4.container_feedbacks
+                .container
+                    h2.container__title.text-white Отзывы о нас
+                    .owl-feedbacks.owl-carousel.owl-theme
+                        .preview
+                            .preview__transparent
+                            figure.preview__figure_feedbacks
+                                img(src="img/feedback-user.png", alt="Отзыв", class="preview__img preview__img_feedbacks")
+                            .preview__bottom
+                                h3.preview__title.text-center.text-purple Курс: Капкейки
+                                .preview__label.text-center Продолжительность: 
+                                    b 3 дня
+                                .preview__label.text-center Сложность: 
+                                    b.text-purple Легкий
+                                    
+                            .preview__bottom
+                                .preview__text 
+                                    | Купила этот видео урок. Ну что сказать - 
+                                    | огромное спасибо! Каждый шаг расписан 
+                                    | идеально понятно и без личних слов. 
+                                    | Прописаны нюансы без которых точно бы ни чего не получилось. Я в восторге от такого 
+                                    | подхода к продаваемому продукту.
+                            .preview__details.preview__details-feedback Петрова Ирина @kapelka
+                            
+                        .preview
+                            .preview__transparent
+                            figure.preview__figure_feedbacks
+                                img(src="img/feedback-user.png", alt="Отзыв", class="preview__img preview__img_feedbacks")
+                            .preview__bottom
+                                h3.preview__title.text-center.text-purple Курс: Капкейки
+                                .preview__label.text-center Продолжительность: 
+                                    b 3 дня
+                                .preview__label.text-center Сложность: 
+                                    b.text-purple Легкий
+                                    
+                            .preview__bottom
+                                .preview__text 
+                                    | Купила этот видео урок. Ну что сказать - 
+                                    | огромное спасибо! Каждый шаг расписан 
+                                    | идеально понятно и без личних слов. 
+                                    | Прописаны нюансы без которых точно бы ни чего не получилось. Я в восторге от такого 
+                                    | подхода к продаваемому продукту.
+                            .preview__details.preview__details-feedback Петрова Ирина @kapelka
+                            
+                        .preview
+                            .preview__transparent
+                            figure.preview__figure_feedbacks
+                                img(src="img/feedback-user.png", alt="Отзыв", class="preview__img preview__img_feedbacks")
+                            .preview__bottom
+                                h3.preview__title.text-center.text-purple Курс: Капкейки
+                                .preview__label.text-center Продолжительность: 
+                                    b 3 дня
+                                .preview__label.text-center Сложность: 
+                                    b.text-purple Легкий
+                                    
+                            .preview__bottom
+                                .preview__text 
+                                    | Купила этот видео урок. Ну что сказать - 
+                                    | огромное спасибо! Каждый шаг расписан 
+                                    | идеально понятно и без личних слов. 
+                                    | Прописаны нюансы без которых точно бы ни чего не получилось. Я в восторге от такого 
+                                    | подхода к продаваемому продукту.
+                            .preview__details.preview__details-feedback Петрова Ирина @kapelka
+                            
+                        .preview
+                            .preview__transparent
+                            figure.preview__figure_feedbacks
+                                img(src="img/feedback-user.png", alt="Отзыв", class="preview__img preview__img_feedbacks")
+                            .preview__bottom
+                                h3.preview__title.text-center.text-purple Курс: Капкейки
+                                .preview__label.text-center Продолжительность: 
+                                    b 3 дня
+                                .preview__label.text-center Сложность: 
+                                    b.text-purple Легкий
+                                    
+                            .preview__bottom
+                                .preview__text 
+                                    | Купила этот видео урок. Ну что сказать - 
+                                    | огромное спасибо! Каждый шаг расписан 
+                                    | идеально понятно и без личних слов. 
+                                    | Прописаны нюансы без которых точно бы ни чего не получилось. Я в восторге от такого 
+                                    | подхода к продаваемому продукту.
+                            .preview__details.preview__details-feedback Петрова Ирина @kapelka
+                        
+                    
+                                
+            iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.711500859382!2d37.604803216062955!3d55.763513698633126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a471b93b34d%3A0x973b1f4e854a1105!2z0KLQstC10YDRgdC60LDRjyDRg9C7Liwg0JzQvtGB0LrQstCw!5e0!3m2!1sru!2sru!4v1523909883384", width="100%", height="400", frameborder="0", style="border:0", allowfullscreen)                  
         include ../blocks/footer/footer.jade

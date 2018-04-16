@@ -25,7 +25,7 @@ a:hover{
 }
 
 .text-purple{
-    color: #9b59b6;
+    color: #9b59b6 !important;
 }
 
 .text-white{
@@ -168,4 +168,8 @@ a:hover{
 
 .background_purple{
     background: linear-gradient(90deg, #9b78ba 45%, #9a6786  55%);
+}
+
+.background_purple2{
+    background: linear-gradient(to right, #7367f0 0%, #ce9ffc 100%);
 }
