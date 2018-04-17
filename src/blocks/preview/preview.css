@@ -34,8 +34,15 @@
 }
 
 .preview__conditer-img{
-    max-width: 360px;
-    max-height: 297px;
+    width: 360px !important;
+    height: 287px !important;
+}
+
+@media (max-width:992px),(max-device-width:992px) {
+    .preview__conditer-img{
+        width: 280px !important;
+        height: 237px !important;
+    }
 }
 
 .preview:hover .preview__img:not(.preview__img_feedbacks){

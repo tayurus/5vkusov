@@ -55,8 +55,15 @@
     color: #c11c56;
 }
 
-.feedback__submit:hover{
+.feedback__submit:not(.feedback__submit_disabled):hover{
     color: #7367f0;
+}
+
+.feedback__submit_disabled{
+    background: #ccc;
+    color: #000;
+    opacity: 0.5;
+    outline: none;
 }
 
 #feedback__agree{
