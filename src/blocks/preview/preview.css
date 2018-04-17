@@ -33,6 +33,11 @@
     top: -35px;
 }
 
+.preview__conditer-img{
+    max-width: 360px;
+    max-height: 297px;
+}
+
 .preview:hover .preview__img:not(.preview__img_feedbacks){
     opacity: 0.8;
     -webkit-transform: scale3d(1.1,1.1,1);
@@ -69,7 +74,7 @@
 }
 
 .preview__bottom{
-    padding: 0px 20px 14px 20px;
+    padding: 0px 20px 14px 15px;
     background-color: #fff;
 }
 

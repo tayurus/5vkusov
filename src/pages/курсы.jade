@@ -1,0 +1,258 @@
+doctype html
+html(lang="ru")
+    include ../blocks/head/head.jade
+    body
+        include ../blocks/header/header.jade
+        
+        main
+            .container
+                ul.breadcrumbs
+                    li
+                        a.breadcrumbs__item(href="#") Главная 
+                    li
+                        a.breadcrumbs__item(href="#") Наши курсы
+                        
+            section.container
+                h2.container__title Наши курсы
+                .row
+                    .col-xl-3.col-sm-6.form-group
+                        a.preview(href="#")
+                            figure
+                                img(src="img/course1.png", class="preview__img")
+                            .preview__bottom
+                                h3.preview__title Курс: «Макаронс»
+                                .d-flex.justify-content-between
+                                    .preview__label 25.04.18
+                                    .preview__label Иванова Юлия
+                                hr
+                            .preview__bottom
+                                .preview__label Продолжительность: 
+                                    b 3 дня
+                                .preview__label Время занятий: 
+                                    b с 10:00 до 18:00 
+                                .preview__label Сложность: 
+                                    b.text-purple Легкий
+                                    
+                                .preview__price 
+                                    span 1500
+                                    | руб
+                            span.preview__details Подробнее
+                                
+                                
+                    .col-xl-3.col-sm-6.form-group
+                        a.preview(href="#")
+                            figure
+                                img(src="img/course2.png", class="preview__img")
+                            .preview__bottom
+                                h3.preview__title Курс: «Пасха»
+                                .d-flex.justify-content-between
+                                    .preview__label 25.04.18
+                                    .preview__label Иванова Юлия
+                                hr
+                            .preview__bottom
+                                .preview__label Продолжительность: 
+                                    b 3 дня
+                                .preview__label Время занятий: 
+                                    b с 10:00 до 18:00 
+                                .preview__label Сложность: 
+                                    b.text-purple Средний
+                                    
+                                .preview__price 
+                                    span 4000
+                                    | руб
+                                span.preview__details Подробнее
+                                
+                                
+                    .col-xl-3.col-sm-6.form-group
+                        a.preview(href="#")
+                            figure
+                                img(src="img/course3.png", class="preview__img")
+                            .preview__bottom
+                                h3.preview__title Курс: «Cake-pops»
+                                .d-flex.justify-content-between
+                                    .preview__label 25.04.18
+                                    .preview__label Иванова Юлия
+                                hr
+                            .preview__bottom
+                                .preview__label Продолжительность: 
+                                    b 3 дня
+                                .preview__label Время занятий: 
+                                    b с 10:00 до 18:00 
+                                .preview__label Сложность: 
+                                    b.text-purple Легкий
+                                    
+                                .preview__price 
+                                    span 1200
+                                    | руб
+                                span.preview__details Подробнее
+                                
+                                
+                    .col-xl-3.col-sm-6.form-group
+                        a.preview(href="#")
+                            figure
+                                img(src="img/course4.png", class="preview__img")
+                            .preview__bottom
+                                h3.preview__title Курс: «Торт с ягодами»
+                                .d-flex.justify-content-between
+                                    .preview__label 25.04.18
+                                    .preview__label Иванова Юлия
+                                hr
+                            .preview__bottom
+                                .preview__label Продолжительность: 
+                                    b 3 дня
+                                .preview__label Время занятий: 
+                                    b с 10:00 до 18:00 
+                                .preview__label Сложность: 
+                                    b.text-purple Сложный
+                                    
+                                .preview__price 
+                                    span 6500
+                                    | руб
+                                span.preview__details Подробнее
+                                
+                                
+                    .col-xl-3.col-sm-6.form-group
+                        a.preview(href="#")
+                            figure
+                                img(src="img/course5.png", class="preview__img")
+                            .preview__bottom
+                                h3.preview__title Курс: «День рождения»
+                                .d-flex.justify-content-between
+                                    .preview__label 25.04.18
+                                    .preview__label Иванова Юлия
+                                hr
+                            .preview__bottom
+                                .preview__label Продолжительность: 
+                                    b 3 дня
+                                .preview__label Время занятий: 
+                                    b с 10:00 до 18:00 
+                                .preview__label Сложность: 
+                                    b.text-purple Легкий
+                                    
+                                .preview__price 
+                                    span 1500
+                                    | руб
+                            span.preview__details Подробнее
+                                
+                                
+                    .col-xl-3.col-sm-6.form-group
+                        a.preview(href="#")
+                            figure
+                                img(src="img/course6.png", class="preview__img")
+                            .preview__bottom
+                                h3.preview__title Курс: «Капкейки»
+                                .d-flex.justify-content-between
+                                    .preview__label 25.04.18
+                                    .preview__label Иванова Юлия
+                                hr
+                            .preview__bottom
+                                .preview__label Продолжительность: 
+                                    b 3 дня
+                                .preview__label Время занятий: 
+                                    b с 10:00 до 18:00 
+                                .preview__label Сложность: 
+                                    b.text-purple Средний
+                                    
+                                .preview__price 
+                                    span 4000
+                                    | руб
+                                span.preview__details Подробнее
+                                
+                                
+                    .col-xl-3.col-sm-6.form-group
+                        a.preview(href="#")
+                            figure
+                                img(src="img/course7.png", class="preview__img")
+                            .preview__bottom
+                                h3.preview__title Курс: «Конфетки»
+                                .d-flex.justify-content-between
+                                    .preview__label 25.04.18
+                                    .preview__label Иванова Юлия
+                                hr
+                            .preview__bottom
+                                .preview__label Продолжительность: 
+                                    b 3 дня
+                                .preview__label Время занятий: 
+                                    b с 10:00 до 18:00 
+                                .preview__label Сложность: 
+                                    b.text-purple Легкий
+                                    
+                                .preview__price 
+                                    span 1200
+                                    | руб
+                                span.preview__details Подробнее
+                                
+                                
+                    .col-xl-3.col-sm-6.form-group
+                        a.preview(href="#")
+                            figure
+                                img(src="img/course8.png", class="preview__img")
+                            .preview__bottom
+                                h3.preview__title Курс: «Зефир»
+                                .d-flex.justify-content-between
+                                    .preview__label 25.04.18
+                                    .preview__label Иванова Юлия
+                                hr
+                            .preview__bottom
+                                .preview__label Продолжительность: 
+                                    b 3 дня
+                                .preview__label Время занятий: 
+                                    b с 10:00 до 18:00 
+                                .preview__label Сложность: 
+                                    b.text-purple Сложный
+                                    
+                                .preview__price 
+                                    span 6500
+                                    | руб
+                                span.preview__details Подробнее
+        
+            section.container
+                h2.container__title Ваши вопросы
+                .row
+                    .col-md-6
+                        .question
+                            .d-flex.align-items-center.pr-4
+                                .question__number 1
+                                .question__title Что нужно иметь, чтобы пройти курсы?
+                            .querstion__body
+                                hr
+                                .question__text 
+                                    | Руки и деньги (первое необязательно)
+                    .col-md-6
+                        .question
+                            .d-flex.align-items-center.pr-4
+                                .question__number 3
+                                .question__title Сколько длятся курсы?
+                            .querstion__body
+                                hr
+                                .question__text 
+                                    | Пока Вы платите и не минутой дольше
+
+                    .col-md-6
+                        .question
+                            .d-flex.align-items-center.pr-4
+                                .question__number 2
+                                .question__title Можно ли прийти с детьми?
+                            .querstion__body
+                                hr
+                                .question__text 
+                                    | Блюда из детей не предусмотрены
+
+                    .col-md-6
+                        .question
+                            .d-flex.align-items-center.pr-4
+                                .question__number 4
+                                .question__title Что нужно иметь, чтобы пройти курсы?
+                            .querstion__body
+                                hr
+                                .question__text 
+                                    | Чтобы записаться на курс вам нужно позвонить нам по телефонам:
+                                    br
+                                    .font-weight-bold +7 (900) 800-79-60  +7 (800) 900-80-30
+                                    | или оставить заявку на нашем сайте 
+                                    | на странице интересуещего вас курса
+                  
+                                
+            include ../blocks/feedback/feedback.jade
+                                    
+        include ../blocks/footer/footer.jade

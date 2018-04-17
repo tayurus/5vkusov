@@ -32,6 +32,11 @@ a:hover{
     color: #fff;
 }
 
+.text-gray{
+    color: #333;
+}
+
+
 .phone-icon, .time-icon, .insta-icon, .twitter-icon,  .like-icon, .cabinet-icon, .basket-icon, .search-icon{
     position: relative;
     padding-left: 20px;
@@ -49,6 +54,18 @@ a:hover{
     width: 14px;
     height: 14px;
     background: url("img/favourite.png") no-repeat center / cover;
+    cursor: pointer;
+}
+
+.favourite-icon_big{
+    width: 17px;
+    height: 17px;
+}
+
+.conversation-icon{
+    width: 15px;
+    height: 15px;
+    background: url("img/conversation.png") no-repeat center / cover;
     cursor: pointer;
 }
 

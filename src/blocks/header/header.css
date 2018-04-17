@@ -43,7 +43,7 @@
     min-height: 146px;
     max-height: 146px;
     position: absolute;
-    z-index: 2;
+    z-index: 4;
     left: 0%;
     top: 50%;
     transform: translateY(-50%);
@@ -67,7 +67,7 @@
     display: none;
     padding: 20px 20px 1px 50px;
     width: 260px;
-    z-index: 3;
+    z-index: 4;
     position: absolute;
     box-shadow: 0 2px 7px rgba(0, 0, 0, 0.2);
     background-color: #ffffff;
@@ -127,8 +127,6 @@
     top: 0%;
     right: 15px;
 }
-
-
 
 @media (max-width:1200px),(max-device-width:1200px) {
     .header__nav-item{

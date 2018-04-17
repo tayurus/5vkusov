@@ -13,7 +13,28 @@
     position: relative;
 }
 
-.breadcrumbs__item:not(.breadcrumbs__item_active){
+ul.breadcrumbs li:not(:last-child) a{
+    margin-right: 25px;
+}
+
+ul.breadcrumbs li:not(:last-child) a::after{
+    position: absolute;
+    content: "";
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 100%;
+    width: 5px;
+    height: 6px;
+    background-color: #9a70a2;
+}
+
+ul.breadcrumbs li:last-child a{
+    color: #646464;
+}
+
+/*На случай, если нужно будет переписать хлебные крошки с использованием класса "активный элемент"*/
+/* .breadcrumbs__item:not(.breadcrumbs__item_active){
     margin-right: 25px;
 }
 
@@ -27,11 +48,11 @@
     width: 5px;
     height: 6px;
     background-color: #9a70a2;
-}
+} */
 
-.breadcrumbs__item_active{
+/* .breadcrumbs__item_active{
     color: #646464;
-}
+} */
 
 @media (max-width:1200px),(max-device-width:1200px) {
     .breadcrumbs{

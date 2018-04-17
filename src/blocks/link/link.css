@@ -40,6 +40,10 @@
     background: url("img/details.png") no-repeat center / cover;
 }
 
+.link_details_arrow_right25::after{
+    right: -25px;
+}
+
 @media (max-width:500px),(max-device-width:500px) {
     .link_header{
         font-size: 14px;
