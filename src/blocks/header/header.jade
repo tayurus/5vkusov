@@ -21,18 +21,22 @@ header.header
                     a(href="#", class="link link_header insta-icon link_header-text-small") @_Изделия
                     a(href="#", class="twitter-icon")
                         
-                .col-lg-2.col-md-12.d-flex.flex-wrap.justify-content-around.justify-content-xl-between.align-items-center
+                .col-lg-2.col-md-12.d-none.d-md-flex.flex-wrap.justify-content-around.justify-content-xl-between.align-items-center
                     a(href="#", class="like-icon")
                     a(href="#", class="cabinet-icon")
                     a(href="#", class="basket-icon")
                     span.search-icon
 
-    .container-fluid.background-gray
-        .container
+    .container-fluid.background-gray.container_mobile
+        .container.container_nav-wrapper
             nav.d-flex.flex-wrap.justify-content-around.navbar.navbar-expand-md
                 a(href="#", class="header__logo")
                     img(src="img/header-logo.png", class="header__nav-img", alt="5 вкусов")
-                
+                .d-flex.d-md-none.justify-content-around(style="min-width:140px;")
+                    a(href="#", class="like-icon")
+                    a(href="#", class="cabinet-icon")
+                    a(href="#", class="basket-icon")
+                    span.search-icon
                 button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNav', aria-controls='navbarNav', aria-expanded='false', aria-label='Toggle navigation')
                     i.fa.fa-bars
                 #navbarNav.collapse.navbar-collapse

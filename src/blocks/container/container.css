@@ -15,6 +15,10 @@
     background: url("img/feedbacks.jpg") no-repeat center / cover;
 }
 
+.container_nav-wrapper{
+    padding: 0px !important;
+}
+
 
 @media (min-width:768px),(min-device-width:768px) {
     .gray-wrapper{
@@ -25,4 +29,11 @@
         background: rgba(0,0,0,0.15);
         z-index: 3;
     }
+}
+
+@media (max-width:767px),(max-device-width:767px) {
+    .container_nav-wrapper, .container_mobile, .container_mobile nav{
+        background: linear-gradient(90deg,#9b78ba 45%,#9a6786 55%);
+    }
+
 }
