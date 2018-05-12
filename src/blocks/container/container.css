@@ -29,11 +29,12 @@
         background: rgba(0,0,0,0.15);
         z-index: 3;
     }
+
 }
 
 @media (max-width:767px),(max-device-width:767px) {
     .container_nav-wrapper, .container_mobile, .container_mobile nav{
-        background: linear-gradient(90deg,#9b78ba 45%,#9a6786 55%);
+        background: linear-gradient(to right, rgb(155, 120, 186) 0%, rgb(153, 104, 138) 64%, rgb(153, 103, 134) 100%);
     }
 
 }

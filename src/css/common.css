@@ -185,7 +185,7 @@ a:hover{
 }
 
 .background_purple{
-    background: linear-gradient(90deg, #9b78ba 45%, #9a6786  55%);
+    background: linear-gradient(to right, rgb(155, 120, 186) 0%, rgb(153, 104, 138) 64%, rgb(153, 103, 134) 100%);
 }
 
 .background_purple2{
