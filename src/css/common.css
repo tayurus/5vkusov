@@ -191,3 +191,9 @@ a:hover{
 .background_purple2{
     background: linear-gradient(to right, #7367f0 0%, #ce9ffc 100%);
 }
+
+@media (max-width:576px) {
+    .fSize-sm-14{
+        font-size: 14px;
+    }
+}
