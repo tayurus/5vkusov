@@ -36,9 +36,23 @@
     background: #773954 !important;
 }
 
-.owl-main .owl-stage-outer{
-    overflow: inherit !important;
+.owl-main .owl-prev{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 1%;
+    font-size: 70px !important;
+    outline: none !important;
 }
+.owl-main .owl-next{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 1%;
+    font-size: 70px !important;
+    outline: none !important;
+}
+
 @media (max-width:1200px),(max-device-width:1200px) {
     .owl-main__name{
         font-size: 62px;
