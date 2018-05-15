@@ -36,6 +36,9 @@
     background: #773954 !important;
 }
 
+.owl-main .owl-stage-outer{
+    overflow: inherit !important;
+}
 @media (max-width:1200px),(max-device-width:1200px) {
     .owl-main__name{
         font-size: 62px;
