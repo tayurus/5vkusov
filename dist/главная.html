@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>Webpage</title>
+		<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+		<link rel="icon" type="image/ico" href="img/favicon.ico">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="Awesome webpage">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<script src="script.js" defer></script>
+	</head>
+	<body>
+		<div class="backcall">
+			<div class="backcall-icon"></div>
+			<div class="backcall-text">Заказать обратный звонок</div>
+			<form class="backcall__form">
+				<div class="backcall__close"></div>
+				<div class="backcall__title">Форма заявки</div>
+				<input type="text" required placeholder="Ваше имя" class="backcall__input mb-2">
+				<input type="tel" required placeholder="Номер телефона" class="backcall__input">
+				<button class="button_backcall">Отправить</button>
+			</form>
+		</div>
+		<noscript>
+			<p>Please enable Javascript</p>
+		</noscript>
+		<div class="header__empty"></div>
+		<header class="header">
+			<form class="header__search">
+				<div class="row">
+					<input type="search" name="search" class="header__search-input">
+					<button class="button_search">Искать</button><span class="close-icon"></span>
+				</div>
+			</form>
+			<div class="container-fluid background_purple header__top">
+				<div class="container">
+					<div class="row">
+						<div class="col-xl-2 col-lg-0 mb-0"></div>
+						<div class="col-xl-4 col-md-6 d-flex flex-wrap justify-content-around justify-content-xl-between align-items-center"><a href="tel:+78009007060" class="link link_header phone-icon">+ 7 (800) 900-70-60</a><span class="link link_header time-icon">Пн-Вс 9:00 - 21:00</span></div>
+						<div class="col-lg-4 col-md-6 d-flex flex-wrap justify-content-around align-items-center header__col_verticalLines"><a href="#" class="link link_header insta-icon link_header-text-small">@_Обучение</a><a href="#" class="link link_header insta-icon link_header-text-small">@_Изделия</a><a href="#" class="twitter-icon"></a></div>
+						<div class="col-lg-2 col-md-12 d-none d-md-flex flex-wrap justify-content-around justify-content-xl-between align-items-center"><a href="#" class="like-icon"></a><a href="#" class="cabinet-icon"></a><a href="#" class="basket-icon"></a><span class="search-icon"></span></div>
+					</div>
+				</div>
+			</div>
+			<div class="container-fluid background-gray container_mobile">
+				<div class="container container_nav-wrapper">
+					<nav class="d-flex flex-wrap justify-content-around navbar navbar-expand-md"><a href="#" class="header__logo"><img src="img/header-logo.png" alt="5 вкусов" class="header__nav-img"></a>
+						<div style="min-width:140px;" class="d-flex d-md-none justify-content-around"><a href="#" class="like-icon"></a><a href="#" class="cabinet-icon"></a><a href="#" class="basket-icon"></a><span class="search-icon"></span></div>
+						<button type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><i class="fa fa-bars"></i></button>
+						<div id="navbarNav" class="collapse navbar-collapse">
+							<ul class="navbar-nav d-flex flex-wrap justify-content-between">
+								<li><a href="#" class="header__nav-item">о нас</a></li>
+								<li><a href="#" class="header__nav-item header__nav-item_active dropdown">кондитерские изделия</a>
+									<ul class="header__submenu">
+										<li><a href="#" class="header__submenu-item">Торты в наличии</a></li>
+										<li><a href="#" class="header__submenu-item">Детские торты</a></li>
+										<li><a href="#" class="header__submenu-item">Свадебные торты</a></li>
+										<li><a href="#" class="header__submenu-item">Торты для мужчин</a></li>
+										<li><a href="#" class="header__submenu-item">Торты для женщин</a></li>
+										<li><a href="#" class="header__submenu-item">Торты на юбилей</a></li>
+										<li><a href="#" class="header__submenu-item">Торты корпоративные</a></li>
+										<li><a href="#" class="header__submenu-item">Макаронсы</a></li>
+										<li><a href="#" class="header__submenu-item">Пирожные</a></li>
+										<li><a href="#" class="header__submenu-item">Кексы</a></li>
+										<li><a href="#" class="header__submenu-item">Конфеты</a></li>
+										<li><a href="#" class="header__submenu-item">Зефир</a></li>
+										<li><a href="#" class="header__submenu-item">Сладкий стол</a></li>
+									</ul>
+								</li>
+								<li><a href="#" class="header__nav-item">начинки для тортов</a></li>
+								<li><a href="#" class="header__nav-item">как заказать</a></li>
+								<li><a href="#" class="header__nav-item">обучение</a></li>
+								<li><a href="#" class="header__nav-item">разное</a></li>
+								<li><a href="#" class="header__nav-item">доставка</a></li>
+								<li><a href="#" class="header__nav-item">контакты</a></li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<div class="gray-wrapper">                           </div>
+		<main class="text-center text-md-left">
+			<section class="container-fluid background_purple owl-carousel owl-main owl-theme">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6"><img src="img/cake-slider.png"></div>
+						<div class="col-md-6 mt-5 mt-md-0">
+							<h2 class="owl-main__title">Кондитерская студия</h2>
+							<h1 class="owl-main__name">5 вкусов</h1>
+							<div class="owl-main__text">Самые актуальные и востребованные курсы для начинающих. Занятия в школе - практические и проходят в интенсивном режиме.  За короткое времени вы получаете огромный объем информации</div><a href="#" class="button button_big d-inline-block mb-3 mb-md-0">Узнать больше</a>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6"><img src="img/cake-slider.png"></div>
+						<div class="col-md-6 mt-5 mt-md-0">
+							<h2 class="owl-main__title">Кондитерская студия</h2>
+							<h1 class="owl-main__name">5 вкусов</h1>
+							<div class="owl-main__text">Самые актуальные и востребованные курсы для начинающих. Занятия в школе - практические и проходят в интенсивном режиме.  За короткое времени вы получаете огромный объем информации</div><a href="#" class="button button_big d-inline-block mb-3 mb-md-0">Узнать больше</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="container">
+				<h2 class="container__title">Наши курсы для начинающих</h2>
+				<div class="row">
+					<div class="col-xl-3 col-6 form-group px-1"><a href="#" class="preview">
+							<figure><img src="img/course1.png" class="preview__img img-fluid"></figure>
+							<div class="preview__bottom">
+								<h3 class="preview__title">Курс: «Макаронс»</h3>
+								<div class="d-flex justify-content-between flex-column flex-sm-row">
+									<div class="preview__label">25.04.18</div>
+									<div class="preview__label">Иванова Юлия</div>
+								</div>
+								<hr>
+							</div>
+							<div class="preview__bottom">
+								<div class="preview__label">Продолжительность: <b>3 дня</b></div>
+								<div class="preview__label">Время занятий: <b>с 10:00 до 18:00 </b></div>
+								<div class="preview__label">Сложность: <b class="text-purple">Легкий</b></div>
+								<div class="preview__price"> <span>1500</span>руб</div>
+							</div><span class="preview__details">Подробнее</span></a></div>
+					<div class="col-xl-3 col-6 form-group px-1"><a href="#" class="preview">
+							<figure><img src="img/course2.png" class="preview__img img-fluid"></figure>
+							<div class="preview__bottom">
+								<h3 class="preview__title">Курс: «Пасха»</h3>
+								<div class="d-flex justify-content-between flex-column flex-sm-row">
+									<div class="preview__label">25.04.18</div>
+									<div class="preview__label">Иванова Юлия</div>
+								</div>
+								<hr>
+							</div>
+							<div class="preview__bottom">
+								<div class="preview__label">Продолжительность: <b>3 дня</b></div>
+								<div class="preview__label">Время занятий: <b>с 10:00 до 18:00 </b></div>
+								<div class="preview__label">Сложность: <b class="text-purple">Средний</b></div>
+								<div class="preview__price"> <span>4000</span>руб</div><span class="preview__details">Подробнее</span>
+							</div></a></div>
+					<div class="col-xl-3 col-6 form-group px-1"><a href="#" class="preview">
+							<figure><img src="img/course3.png" class="preview__img img-fluid"></figure>
+							<div class="preview__bottom">
+								<h3 class="preview__title">Курс: «Cake-pops»</h3>
+								<div class="d-flex justify-content-between flex-column flex-sm-row">
+									<div class="preview__label">25.04.18</div>
+									<div class="preview__label">Иванова Юлия</div>
+								</div>
+								<hr>
+							</div>
+							<div class="preview__bottom">
+								<div class="preview__label">Продолжительность: <b>3 дня</b></div>
+								<div class="preview__label">Время занятий: <b>с 10:00 до 18:00 </b></div>
+								<div class="preview__label">Сложность: <b class="text-purple">Легкий</b></div>
+								<div class="preview__price"> <span>1200</span>руб</div><span class="preview__details">Подробнее</span>
+							</div></a></div>
+					<div class="col-xl-3 col-6 form-group px-1"><a href="#" class="preview">
+							<figure><img src="img/course4.png" class="preview__img img-fluid"></figure>
+							<div class="preview__bottom">
+								<h3 class="preview__title">Курс: «Торт с ягодами»</h3>
+								<div class="d-flex justify-content-between flex-column flex-sm-row">
+									<div class="preview__label">25.04.18</div>
+									<div class="preview__label">Иванова Юлия</div>
+								</div>
+								<hr>
+							</div>
+							<div class="preview__bottom">
+								<div class="preview__label">Продолжительность: <b>3 дня</b></div>
+								<div class="preview__label">Время занятий: <b>с 10:00 до 18:00 </b></div>
+								<div class="preview__label">Сложность: <b class="text-purple">Сложный</b></div>
+								<div class="preview__price"> <span>6500</span>руб</div><span class="preview__details">Подробнее</span>
+							</div></a></div>
+				</div>
+				<div class="d-flex justify-content-center mt-4"><a href="#" class="button button_purple text-white">Посмотреть все курсы</a></div>
+			</section>
+			<section class="container">
+				<h2 class="container__title">Рекомендованные товары</h2>
+				<div class="row">
+					<div class="col-xl-3 col-6 form-group px-1"><a href="#" class="preview">
+							<figure><img src="img/category1.png" class="preview__img img-fluid"></figure>
+							<div class="preview__bottom">
+								<h3 class="preview__title">Детские торты</h3>
+								<h4 class="preview__text">Предлагаем широкий выбор начинок и дизайна для торта Вашей мечты</h4>
+								<div class="preview__price">от<span>3500</span>руб</div><span class="preview__details">Подробнее</span>
+							</div></a></div>
+					<div class="col-xl-3 col-6 form-group px-1"><a href="#" class="preview">
+							<figure><img src="img/category2.png" class="preview__img img-fluid"></figure>
+							<div class="preview__bottom">
+								<h3 class="preview__title">Свадебные торты</h3>
+								<h4 class="preview__text">Предлагаем широкий выбор начинок и дизайна для торта Вашей мечты</h4>
+								<div class="preview__price">от<span>180</span>руб</div><span class="preview__details">Подробнее</span>
+							</div></a></div>
+					<div class="col-xl-3 col-6 form-group px-1"><a href="#" class="preview">
+							<figure><img src="img/category3.png" class="preview__img img-fluid"></figure>
+							<div class="preview__bottom">
+								<h3 class="preview__title">Конфеты</h3>
+								<h4 class="preview__text">Предлагаем широкий выбор начинок и дизайна для торта Вашей мечты</h4>
+								<div class="preview__price">от<span>350</span>руб</div><span class="preview__details">Подробнее</span>
+							</div></a></div>
+					<div class="col-xl-3 col-6 form-group px-1"><a href="#" class="preview">
+							<figure><img src="img/category4.png" class="preview__img img-fluid"></figure>
+							<div class="preview__bottom">
+								<h3 class="preview__title">Пирожные</h3>
+								<h4 class="preview__text">Предлагаем широкий выбор начинок и дизайна для торта Вашей мечты</h4>
+								<div class="preview__price">от<span>110</span>руб</div><span class="preview__details">Подробнее</span>
+							</div></a></div>
+				</div>
+				<div class="d-flex justify-content-center mt-4"><a href="#" class="button background_purple2 text-white">Посмотреть все изделия</a></div>
+			</section>
+			<section>
+				<form class="feedback container-fluid">
+					<div class="container">
+						<div class="col-xl-6 col-sm-12 mx-auto mx-xl-0">
+							<h2 class="feedback__title text-center text-xl-left">Форма обратной связи</h2>
+							<h3 class="feedback__subtitle">Заполните форму, укажите, что Вас интересует, наш консультант свяжется с Вами в самое ближайшее время!</h3>
+							<div class="row d-flex justify-content-around flex-wrap">
+								<input type="text" required placeholder="Ваше имя" name="name" class="feedback__input">
+								<input type="email" required placeholder="E - mail" name="mail" class="feedback__input">
+							</div>
+							<div class="row d-flex justify-content-around flex-wrap">
+								<input type="tel" required placeholder="Номер телефона" name="phone" class="feedback__input">
+								<input type="text" required placeholder="Что Вас интересует?" name="subject" class="feedback__input">
+							</div>
+							<div class="row d-flex justify-content-around flex-wrap align-items-center">
+								<div class="col-xl-7 no-padding d-flex justify-content-center justify-content-xl-start"> 
+									<div class="feedback__checkbox-wrapper">
+										<input type="checkbox" name="agree" required id="feedback__agree">
+										<label for="feedback__agree" class="feedback__custom-input"></label>
+									</div><a href="#" class="feedback__label">- Я даю согласие на обработку<br>моих персональных данных</a>
+								</div>
+								<input type="submit" value="Отправить заявку" class="button feedback__submit feedback__submit_disabled">
+							</div>
+						</div>
+					</div>
+				</form>
+			</section>
+			<section class="container py-4">
+				<div class="row">
+					<div class="col-lg-6"><img src="img/about-img.png" class="img-fluid d-block mx-auto"></div>
+					<div class="col-lg-6">
+						<h2 class="container__title text-center text-md-left">О компании</h2>
+						<div class="container__text">
+							 
+							Кондитерская студия 5Вкусов -это натуральные ингредиенты и уникальный дизайн каждого торта.  У нас осуществляются все ваши сладкие фантазии. 
+							Мы используем только лучшие ингредиенты от ведущих производителей: бельгийский шоколад, натуральные фруктовые пюре и свежие ягоды. Наши кондитеры прошли обучение в лучших школах Франции, России и Испании. 
+							Мы следим за последними тенденциями в кондитерском искусстве, используем оригинальные рецепты и современные техники, особое внимание уделяя качеству ингредиентов, используя только лучшие и натуральные продукты без консервантов и искусственных добавок. 
+							Мы удивим Вас своими уникальными и разнообразными кондитерскими 
+							изделиями, которые непременно украсят Ваш праздник будь то день 
+							рождения, небольшое семейное чаепитие или грандиозное мероприятие!
+						</div><a href="#" class="link_details text-right d-block mt-4 pr-4">Познакомиться с компанией</a>
+					</div>
+				</div>
+			</section>
+			<section class="container-fluid py-4 container_feedbacks">
+				<div class="container">
+					<h2 class="container__title text-white">Отзывы о нас</h2>
+					<div class="owl-feedbacks owl-carousel owl-theme">
+						<div class="preview">
+							<div class="preview__transparent"></div>
+							<figure class="preview__figure_feedbacks"><img src="img/feedback-user.png" alt="Отзыв" class="preview__img preview__img_feedbacks"></figure>
+							<div class="preview__bottom">
+								<h3 class="preview__title text-center text-purple mb-0">Курс: Капкейки</h3>
+								<div class="preview__label text-center mb-0">Продолжительность: <b>3 дня</b></div>
+								<div class="preview__label text-center mb-0">Сложность: <b class="text-purple">Легкий</b></div>
+							</div>
+							<div class="preview__bottom">
+								<div class="preview__text">
+									 
+									Купила этот видео урок. Ну что сказать - 
+									огромное спасибо! Каждый шаг расписан 
+									идеально понятно и без личних слов. 
+									Прописаны нюансы без которых точно бы ни чего не получилось. Я в восторге от такого 
+									подхода к продаваемому продукту.
+								</div>
+							</div>
+							<div class="preview__details preview__details-feedback">Петрова Ирина @kapelka</div>
+						</div>
+						<div class="preview">
+							<div class="preview__transparent"></div>
+							<figure class="preview__figure_feedbacks"><img src="img/feedback-user.png" alt="Отзыв" class="preview__img preview__img_feedbacks"></figure>
+							<div class="preview__bottom">
+								<h3 class="preview__title text-center text-purple mb-0">Курс: Капкейки</h3>
+								<div class="preview__label text-center mb-0">Продолжительность: <b>3 дня</b></div>
+								<div class="preview__label text-center mb-0">Сложность: <b class="text-purple">Легкий</b></div>
+							</div>
+							<div class="preview__bottom">
+								<div class="preview__text">
+									 
+									Купила этот видео урок. Ну что сказать - 
+									огромное спасибо! Каждый шаг расписан 
+									идеально понятно и без личних слов. 
+									Прописаны нюансы без которых точно бы ни чего не получилось. Я в восторге от такого 
+									подхода к продаваемому продукту.
+								</div>
+							</div>
+							<div class="preview__details preview__details-feedback">Петрова Ирина @kapelka</div>
+						</div>
+						<div class="preview">
+							<div class="preview__transparent"></div>
+							<figure class="preview__figure_feedbacks"><img src="img/feedback-user.png" alt="Отзыв" class="preview__img preview__img_feedbacks"></figure>
+							<div class="preview__bottom">
+								<h3 class="preview__title text-center text-purple mb-0">Курс: Капкейки</h3>
+								<div class="preview__label text-center mb-0">Продолжительность: <b>3 дня</b></div>
+								<div class="preview__label text-center mb-0">Сложность: <b class="text-purple">Легкий</b></div>
+							</div>
+							<div class="preview__bottom">
+								<div class="preview__text">
+									 
+									Купила этот видео урок. Ну что сказать - 
+									огромное спасибо! Каждый шаг расписан 
+									идеально понятно и без личних слов. 
+									Прописаны нюансы без которых точно бы ни чего не получилось. Я в восторге от такого 
+									подхода к продаваемому продукту.
+								</div>
+							</div>
+							<div class="preview__details preview__details-feedback">Петрова Ирина @kapelka</div>
+						</div>
+						<div class="preview">
+							<div class="preview__transparent"></div>
+							<figure class="preview__figure_feedbacks"><img src="img/feedback-user.png" alt="Отзыв" class="preview__img preview__img_feedbacks"></figure>
+							<div class="preview__bottom">
+								<h3 class="preview__title text-center text-purple mb-0">Курс: Капкейки</h3>
+								<div class="preview__label text-center mb-0">Продолжительность: <b>3 дня</b></div>
+								<div class="preview__label text-center mb-0">Сложность: <b class="text-purple">Легкий</b></div>
+							</div>
+							<div class="preview__bottom">
+								<div class="preview__text">
+									 
+									Купила этот видео урок. Ну что сказать - 
+									огромное спасибо! Каждый шаг расписан 
+									идеально понятно и без личних слов. 
+									Прописаны нюансы без которых точно бы ни чего не получилось. Я в восторге от такого 
+									подхода к продаваемому продукту.
+								</div>
+							</div>
+							<div class="preview__details preview__details-feedback">Петрова Ирина @kapelka</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.711500859382!2d37.604803216062955!3d55.763513698633126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a471b93b34d%3A0x973b1f4e854a1105!2z0KLQstC10YDRgdC60LDRjyDRg9C7Liwg0JzQvtGB0LrQstCw!5e0!3m2!1sru!2sru!4v1523909883384" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen>                 </iframe>
+		</main>
+		<footer class="footer">
+			<div class="container-fluid footer__top">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3"><img src="img/footer-logo.png" class="d-block mx-auto footer__logo"></div>
+						<nav class="col-md-9 navbar navbar-expand-sm mx-auto d-flex justify-content-center">
+							<button type="button" data-toggle="collapse" data-target="#navbarFooter" aria-controls="navbarFooter" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><i class="fa fa-bars"></i></button>
+							<div id="navbarFooter" class="collapse navbar-collapse row">
+								<div class="col-sm-4 text-md-left text-center">
+									<ul>
+										<li><a href="#" class="link link_footer">Главная</a></li>
+										<li><a href="#" class="link link_footer">О нас</a></li>
+										<li><a href="#" class="link link_footer">Как заказывать</a></li>
+										<li><a href="#" class="link link_footer">Доставка</a></li>
+										<li><a href="#" class="link link_footer">Контакты</a></li>
+									</ul>
+								</div>
+								<div class="col-sm-4 text-md-left text-center">
+									<ul>
+										<li><a href="#" class="link link_footer">Кондитерские изделия</a></li>
+										<li><a href="#" class="link link_footer">Начинки для тортов</a></li>
+										<li><a href="#" class="link link_footer">Обучение</a></li>
+										<li><a href="#" class="link link_footer">Разное</a></li>
+										<li><a href="#" download class="link link_footer offer-icon">Договор оферты</a></li>
+									</ul>
+								</div>
+								<div class="col-sm-4 text-md-left text-center"><span class="link_label">МОСКВА</span><br><span class="link_label">УЛИЦА ТВЕРСКАЯ, 150К1</span><br><br><a href="tel:+79008007960" class="link_label link_footer">+ 7 (900) 800-79-60</a><br><a href="tel:+78009008030" class="link_label link_footer">+ 7 (800) 900-80-30</a><br><br><a href="mailto:5VKUSOV@MAIL.RU" class="link_label link_footer">5VKUSOV@MAIL.RU</a></div>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+			<div class="container footer__bottom">
+				<div class="row d-flex justify-content-md-between">
+					<div class="col-lg-4 text-lg-left text-center"><span class="link_label">2018. 5 вкусов, все права защищены</span></div>
+					<div class="col-lg-4 d-flex justify-content-around text-lg-left text-center"><a href="#" class="link link_footer insta-icon_footer">@_Обучение</a><a href="#" class="link link_footer insta-icon_footer">@_Изделия</a><a href="#" class="twitter-icon twitter-icon2"></a></div>
+					<div class="col-lg-4 d-flex align-items-center justify-content-center justify-content-md-justify"><a href="http://web-comp.ru" class="link link_footer"> <span class="link link_footer">Сайт разработан</span><img src="img/developers.png" class="footer__developer"></a></div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
