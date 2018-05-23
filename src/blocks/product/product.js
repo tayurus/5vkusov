@@ -53,3 +53,19 @@
     //преобразование даты к формату, который можно задавать атрибуту min у тега input type = date
     let resDate = minDate.toISOString().slice(0, minDate.toISOString().indexOf("T"));
     $(".product__date").attr("min", resDate);
+
+
+
+    $(".button_basket").click(function(){
+
+        $("#product-img")
+            .clone()
+            .css({'position' : 'absolute', 'z-index' : '11100', top: $("#product-img").offset().top, left:$("#product-img").offset().left})
+            .appendTo("body")
+            .animate({opacity: 0.05,
+                left: $(".basket-icon").offset()['left'],
+                top: $(".basket-icon").offset()['top'],
+                width: 20}, 1000, function() {
+                $(this).remove();
+            });
+    })

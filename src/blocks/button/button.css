@@ -14,6 +14,29 @@ button{
     border: none;
 }
 
+.button_backcall{
+    color: #a11b4a;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: relative;
+    background-color: transparent;
+    border: none;
+    display: block;
+    margin: 20px 0px 0px 34px;
+}
+
+.button_backcall::after{
+    position: absolute;
+    content: "";
+    width: 17px;
+    height: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -25px;
+    background: url("img/details.png") no-repeat center / cover;
+}
+
 .button_basket{
     padding: 10px 30px;
     color: #fff;

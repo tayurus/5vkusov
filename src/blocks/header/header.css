@@ -1,3 +1,14 @@
+.header__empty{
+    height: 129px;
+}
+
+header{
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    z-index: 100;
+}
+
 .header__top{
     padding: 25px 0px 20px 0px;
 }
@@ -133,6 +144,10 @@
         font-size: 12px;
     }
 
+    .header__empty{
+        height: 252px;
+    }
+
     /* .header__logo{
         display: none;
     } */
@@ -152,6 +167,18 @@
     .header .row > [class^='col-']{
         margin-bottom: 20px;
     }
+
+    .header__empty{
+        display: none;
+    }
+
+    header{
+        position: static;
+        width: 100%;
+        z-index: 100;
+    }
+
+
 }
 
 @media (max-width:767px),(max-device-width:767px) {
@@ -172,7 +199,7 @@
     }
 
     .header nav{
-        padding: 10px 0px;
+        padding: 10px 0px 0px 0px;
     }
 
     .header__top{
