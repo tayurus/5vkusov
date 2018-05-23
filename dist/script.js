@@ -2893,19 +2893,6 @@ $(".header .search-icon, .close-icon").click(function(){
     $(".header__search").toggle();
 });
 
-$(".owl-main").owlCarousel({
-    items:1,
-    dots: true,
-    nav: true
-    // loop:true,
-    // autoplay:true,
-    // autoplayTimeout:3000
-})
-
-$(".question").click(function() {
-    $(this).toggleClass("question_opened");
-});
-
     //инициализация jquery-ui select
     $("select").selectmenu();
 
@@ -2977,3 +2964,16 @@ $(".question").click(function() {
                 $(this).remove();
             });
     })
+
+$(".owl-main").owlCarousel({
+    items:1,
+    dots: true,
+    nav: true
+    // loop:true,
+    // autoplay:true,
+    // autoplayTimeout:3000
+})
+
+$(".question").click(function() {
+    $(this).toggleClass("question_opened");
+});
