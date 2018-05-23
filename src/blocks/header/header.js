@@ -27,3 +27,31 @@ $(".header nav .navbar-nav li").mouseout(function() {
 $(".header .search-icon, .close-icon").click(function(){
     $(".header__search").toggle();
 });
+
+let replaceContactsAndIcons = false;
+
+$(window).resize(function(){
+    if ($(window).width() <= 767 && !replaceContactsAndIcons)
+    {
+        let contactsHtml = ($("#contacts").html());
+        let iconsHtml = ($("#icons").html());
+
+         $("#contacts").html(iconsHtml);
+         $("#icons").html(contactsHtml);
+
+         replaceContactsAndIcons = true;
+    }
+
+    if  ($(window).width() > 767 && replaceContactsAndIcons){
+        let contactsHtml = ($("#contacts").html());
+        let iconsHtml = ($("#icons").html());
+
+         $("#contacts").html(iconsHtml);
+         $("#icons").html(contactsHtml);
+
+         replaceContactsAndIcons = false;
+    }
+
+})
+
+$(window).resize();
