@@ -31,11 +31,18 @@ $(".header .search-icon, .close-icon").click(function(){
 let replaceContactsAndIcons = false;
 
 $(window).resize(function(){
+    if ($(window).width() < 767){
+        $("#phone").attr("href","tel:+78009007060")
+    }
+    else {
+        $("#phone").removeAttr("href")
+    }
+
+    let contactsHtml = ($("#contacts").html());
+    let iconsHtml = ($("#icons").html());
+
     if ($(window).width() <= 767 && !replaceContactsAndIcons)
     {
-        let contactsHtml = ($("#contacts").html());
-        let iconsHtml = ($("#icons").html());
-
          $("#contacts").html(iconsHtml);
          $("#icons").html(contactsHtml);
 
@@ -43,9 +50,6 @@ $(window).resize(function(){
     }
 
     if  ($(window).width() > 767 && replaceContactsAndIcons){
-        let contactsHtml = ($("#contacts").html());
-        let iconsHtml = ($("#icons").html());
-
          $("#contacts").html(iconsHtml);
          $("#icons").html(contactsHtml);
 

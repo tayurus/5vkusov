@@ -17,6 +17,11 @@ a:hover{
     color: #7367f0;
 }
 
+#phone:hover{
+    color: #fff;
+    cursor:auto;
+}
+
 [type='submit']{
     cursor: pointer;
 }
